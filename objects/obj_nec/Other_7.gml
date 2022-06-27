@@ -7,8 +7,10 @@ if (sprite_index == sprites_indexes.summon_begin) {
 	rip_on_range.reborn(self);
 	rip_on_range = noone;
 	
-	if (hp <= 0)
-		instance_destroy();
+	if (hp <= 0) {
+		is_dead = true;
+		sprite_index = sprites_indexes.dead;
+	}
 } else if (sprite_index == sprites_indexes.summon) {
 	sprite_index = sprites_indexes.trance_begin;
 } else if (sprite_index == sprites_indexes.trance_begin) {
@@ -19,7 +21,4 @@ if (sprite_index == sprites_indexes.summon_begin) {
 	y -= image_yscale;
 	obj_input_controller.set_controlled_unit(self);
 	summoned_unit = noone;
-	play_sound(sfx_ambience, 100, true);
-	audio_stop_sound(stk_skeleton);
-	audio_stop_sound(stk_papai);
 }

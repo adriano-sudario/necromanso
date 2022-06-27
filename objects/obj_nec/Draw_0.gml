@@ -1,5 +1,8 @@
 event_inherited();
 
+if (is_dead)
+	return;
+
 var _hp_bar_width = (bbox_right + 5) - (bbox_left - 5);
 var _hp_bar_height = (bbox_top - 3) - (bbox_top - 5);
 var _hp_bar_x = bbox_left - 5;

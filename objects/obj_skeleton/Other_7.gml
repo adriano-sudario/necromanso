@@ -9,8 +9,15 @@ if (sprite_index == sprites_indexes.dead) {
 	}
 	
 	if (possessed_by != noone) {
-		possessed_by.sprite_index = possessed_by.sprites_indexes.trance_end;
-		obj_input_controller.set_controlled_unit(noone);
+		play_sound(sfx_ambience, 100, true);
+		audio_stop_sound(stk_skeleton);
+		audio_stop_sound(stk_papai);
+		obj_game.is_aberration = false;
+		
+		if (!possessed_by.is_dead) {
+			possessed_by.sprite_index = possessed_by.sprites_indexes.trance_end;
+			obj_input_controller.set_controlled_unit(noone);
+		}
 	}
 	
 	instance_destroy();

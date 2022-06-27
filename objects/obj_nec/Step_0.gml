@@ -1,6 +1,7 @@
 event_inherited();
 
-if (sprite_index == sprites_indexes.summon
+if (is_dead
+	|| sprite_index == sprites_indexes.summon
 	|| sprite_index == sprites_indexes.trance_begin
 	|| sprite_index == sprites_indexes.trance
 	|| sprite_index == sprites_indexes.trance_end)
