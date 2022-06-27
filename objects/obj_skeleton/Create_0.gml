@@ -1,6 +1,6 @@
 event_inherited();
 
-sprites_indexes = get_character_sprites(CHARACTER.SKELETON);
+sprites_indexes = get_character_sprites(CHARACTER.SKELETON_ALLY);
 attack_instance = noone;
 possessed_by = noone;
 scale = {

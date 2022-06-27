@@ -63,7 +63,7 @@ function controller() {
 				is_using_gamepad = true;
 				return true;
 			} else {
-				var result = mouse_check_button_pressed(mb_left);
+				var result = keyboard_check_pressed(ord("X"));
 				if (result)
 					is_using_gamepad = false;
 				return result;
@@ -74,7 +74,7 @@ function controller() {
 				is_using_gamepad = true;
 				return true;
 			} else {
-				var result = mouse_check_button_pressed(mb_middle);
+				var result = keyboard_check_pressed(ord("C"));
 				if (result)
 					is_using_gamepad = false;
 				return result;

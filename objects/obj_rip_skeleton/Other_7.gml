@@ -1,4 +1,4 @@
-if (sprite_index == sprites_indexes.dead) {
+if (sprite_index == death_sprite_index) {
 	var _unit = instance_create_layer(x, y - 1, "Units", obj_skeleton);
 	with (_unit) {
 		possessed_by = other.possessed_by;

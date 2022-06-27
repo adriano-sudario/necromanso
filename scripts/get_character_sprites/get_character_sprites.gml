@@ -2,6 +2,7 @@
 
 enum CHARACTER {
 	SKELETON,
+	SKELETON_ALLY,
 	NEC,
 }
 
@@ -30,6 +31,17 @@ function get_character_sprites(_character) {
 				dead: spr_skeleton_dead,
 				attack: spr_skeleton_attack,
 				attack_preparation: spr_skeleton_attack_preparation,
+			};
+		
+		case CHARACTER.SKELETON_ALLY:
+			return {
+				idle: spr_ally_skeleton_idle,
+				run: spr_ally_skeleton_run,
+				air_up: spr_ally_skeleton_air_up,
+				air_down: spr_ally_skeleton_air_down,
+				dead: spr_ally_skeleton_dead,
+				attack: spr_ally_skeleton_attack,
+				attack_preparation: spr_ally_skeleton_attack_preparation,
 			};
 	}
 }

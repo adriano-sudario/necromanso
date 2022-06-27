@@ -1,7 +1,8 @@
 event_inherited();
 
+sprites_indexes = get_character_sprites(CHARACTER.SKELETON);
 chase_range = 150;
-attack_range = 35;
+attack_range = 42;
 attack_cooldown = 1;
 can_attack = true;
 walk_speed = 3;
