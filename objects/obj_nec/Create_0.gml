@@ -4,9 +4,10 @@ sprites_indexes = get_character_sprites(CHARACTER.NEC);
 rip_on_range = noone;
 max_hp = 10;
 hp = 10;
+summoned_unit = noone;
 scale = {
-	x: 2,
-	y: 2
+	x: 1,
+	y: 1
 };
 
 function handle_x_pressed() {

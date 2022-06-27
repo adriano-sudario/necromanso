@@ -18,6 +18,7 @@ if (sprite_index == sprites_indexes.summon_begin) {
 	can_move = true;
 	y -= image_yscale;
 	obj_input_controller.set_controlled_unit(self);
+	summoned_unit = noone;
 	play_sound(sfx_ambience, 100, true);
 	audio_stop_sound(stk_skeleton);
 	audio_stop_sound(stk_papai);

@@ -23,6 +23,7 @@
     {"id":{"name":"spr_menu","path":"sprites/spr_menu/spr_menu.yy",},"order":8,},
     {"id":{"name":"stk_skeleton","path":"sounds/stk_skeleton/stk_skeleton.yy",},"order":0,},
     {"id":{"name":"obj_rip_skeleton","path":"objects/obj_rip_skeleton/obj_rip_skeleton.yy",},"order":1,},
+    {"id":{"name":"spr_map_level1","path":"sprites/spr_map_level1/spr_map_level1.yy",},"order":9,},
     {"id":{"name":"spr_ally_skeleton_idle","path":"sprites/spr_ally_skeleton_idle/spr_ally_skeleton_idle.yy",},"order":5,},
     {"id":{"name":"obj_nec","path":"objects/obj_nec/obj_nec.yy",},"order":3,},
     {"id":{"name":"draw_outlined_text","path":"scripts/draw_outlined_text/draw_outlined_text.yy",},"order":5,},
@@ -76,6 +77,7 @@
     {"id":{"name":"obj_skeleton","path":"objects/obj_skeleton/obj_skeleton.yy",},"order":4,},
     {"id":{"name":"spr_skeleton_attack_preparation","path":"sprites/spr_skeleton_attack_preparation/spr_skeleton_attack_preparation.yy",},"order":8,},
     {"id":{"name":"spr_skeleton_attack_col","path":"sprites/spr_skeleton_attack_col/spr_skeleton_attack_col.yy",},"order":9,},
+    {"id":{"name":"Level1","path":"rooms/Level1/Level1.yy",},"order":4,},
     {"id":{"name":"fnt_mono_big","path":"fonts/fnt_mono_big/fnt_mono_big.yy",},"order":4,},
     {"id":{"name":"prepare_text_draw","path":"scripts/prepare_text_draw/prepare_text_draw.yy",},"order":2,},
     {"id":{"name":"spr_skeleton_air_up","path":"sprites/spr_skeleton_air_up/spr_skeleton_air_up.yy",},"order":6,},
@@ -101,8 +103,9 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
+    {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
+    {"roomId":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

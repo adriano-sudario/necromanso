@@ -4,8 +4,8 @@ sprites_indexes = get_character_sprites(CHARACTER.SKELETON_ALLY);
 attack_instance = noone;
 possessed_by = noone;
 scale = {
-	x: 2,
-	y: 2
+	x: 1,
+	y: 1
 };
 is_favorite = false;
 
@@ -25,7 +25,7 @@ function die() {
 }
 
 function attack() {
-	if (!is_on_floor)
+	if (!is_on_floor || attack_instance != noone)
 		return;
 	
 	attack_instance = instance_create_depth(x, y, -1, obj_attack, {

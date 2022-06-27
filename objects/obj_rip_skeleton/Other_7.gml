@@ -6,6 +6,7 @@ if (sprite_index == death_sprite_index) {
 		is_favorite = other.is_favorite;
 	}
 	obj_input_controller.set_controlled_unit(_unit);
+	possessed_by.summoned_unit = _unit;
 	
 	if (is_favorite)
 		play_sound(stk_papai, 100, true);

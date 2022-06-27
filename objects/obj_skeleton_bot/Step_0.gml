@@ -12,7 +12,8 @@ for (var i = 0; i < instance_number(obj_unit); i++;)
 	if (point_distance(x, y, _unit.x, _unit.y) > chase_range)
 		continue;
 	
-	if (_unit.object_index == obj_nec || _unit.possessed_by != noone) {
+	if ((_unit.object_index == obj_nec && _unit.summoned_unit == noone)
+		|| (_unit.object_index == obj_skeleton && _unit.possessed_by != noone)) {
 		horizontal_direction = sign(_unit.x - x);
 		horizontal_force = horizontal_direction * walk_speed;
 		

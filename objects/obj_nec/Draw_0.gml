@@ -1,9 +1,9 @@
 event_inherited();
 
 var _hp_bar_width = (bbox_right + 5) - (bbox_left - 5);
-var _hp_bar_height = (bbox_top - 5) - (bbox_top - 10);
+var _hp_bar_height = (bbox_top - 3) - (bbox_top - 5);
 var _hp_bar_x = bbox_left - 5;
-var _hp_bar_y = bbox_top - 10;
+var _hp_bar_y = bbox_top - 8;
 
 draw_set_colour(c_red);
 if (rip_on_range == noone) {

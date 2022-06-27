@@ -1,11 +1,11 @@
 event_inherited();
 
 sprites_indexes = get_character_sprites(CHARACTER.SKELETON);
-chase_range = 150;
+chase_range = 125;
 attack_range = 42;
 attack_cooldown = 1;
 can_attack = true;
-walk_speed = 3;
+walk_speed = 1;
 
 function on_attack_end() {
 	sprite_index = sprites_indexes.idle;

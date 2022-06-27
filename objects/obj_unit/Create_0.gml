@@ -3,7 +3,7 @@
 horizontal_force = 0;
 vertical_force = 0;
 grv = .3;
-walk_speed = 4;
+walk_speed = 2;
 horizontal_direction = 0;
 is_dead = false;
 max_hp = 1;
