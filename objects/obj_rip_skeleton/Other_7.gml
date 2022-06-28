@@ -10,7 +10,7 @@ if (sprite_index == death_sprite_index) {
 	
 	if (is_favorite) {
 		play_sound(stk_papai, 100, true);
-		obj_game.is_aberration = true;
+		start_aberration();
 	} else {
 		play_sound(stk_skeleton, 100, true);
 	}

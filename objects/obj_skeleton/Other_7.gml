@@ -12,7 +12,7 @@ if (sprite_index == sprites_indexes.dead) {
 		play_sound(sfx_ambience, 100, true);
 		audio_stop_sound(stk_skeleton);
 		audio_stop_sound(stk_papai);
-		obj_game.is_aberration = false;
+		stop_aberration();
 		
 		if (!possessed_by.is_dead) {
 			possessed_by.sprite_index = possessed_by.sprites_indexes.trance_end;

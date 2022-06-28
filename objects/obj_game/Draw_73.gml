@@ -1,4 +1,4 @@
-if (!is_aberration)
-	return;
+//if (!is_aberration)
+//	return;
 
-shader_reset();
+//shader_reset();
