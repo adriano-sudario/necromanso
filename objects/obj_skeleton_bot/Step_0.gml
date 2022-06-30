@@ -14,8 +14,9 @@ for (var i = 0; i < instance_number(obj_unit); i++;)
 	if (point_distance(x, y, _unit.x, _unit.y) > chase_range)
 		continue;
 	
-	is_chasing = (_unit.object_index == obj_nec && _unit.summoned_unit == noone)
-		|| (_unit.object_index == obj_skeleton && _unit.possessed_by != noone);
+	is_chasing = !_unit.is_dead
+		&& ((_unit.object_index == obj_nec && _unit.summoned_unit == noone)
+		|| (_unit.object_index == obj_skeleton && _unit.possessed_by != noone));
 	
 	if (is_chasing) {
 		horizontal_direction = sign(_unit.x - x);

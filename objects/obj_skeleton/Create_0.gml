@@ -40,7 +40,9 @@ function attack() {
 			x: 12,
 			y: 13
 		}
-		array_push(ignored_units, other.possessed_by);
+		
+		if (other.possessed_by != noone)
+			array_push(ignored_units, other.possessed_by);
 	}
 	
 	can_move = false;

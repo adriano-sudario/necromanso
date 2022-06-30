@@ -1,10 +1,9 @@
-if (other == owner)
+if (other.id == owner.id)
 	return;
 	
-for (var i = 0; i < array_length(ignored_units); i++) {
-	if (other == ignored_units[i])
+for (var i = 0; i < array_length(ignored_units); i++)
+	if (other.id == ignored_units[i].id)
 		return;
-}
 
 other.hp -= damage;
 

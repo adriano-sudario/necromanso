@@ -10,6 +10,12 @@ scale = {
 	y: 1
 };
 
+function die() {
+	hp = 0;
+	is_dead = true;
+	sprite_index = sprites_indexes.dead;
+}
+
 function handle_x_pressed() {
 	if (rip_on_range == noone || rip_on_range.possessed_by == self)
 		return;

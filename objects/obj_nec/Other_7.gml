@@ -7,10 +7,8 @@ if (sprite_index == sprites_indexes.summon_begin) {
 	rip_on_range.reborn(self);
 	rip_on_range = noone;
 	
-	if (hp <= 0) {
-		is_dead = true;
-		sprite_index = sprites_indexes.dead;
-	}
+	if (hp <= 0)
+		die();
 } else if (sprite_index == sprites_indexes.summon) {
 	sprite_index = sprites_indexes.trance_begin;
 } else if (sprite_index == sprites_indexes.trance_begin) {
