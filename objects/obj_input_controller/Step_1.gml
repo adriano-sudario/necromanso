@@ -1,4 +1,4 @@
-if (controlled_unit == noone)
+if (controlled_unit == noone || !instance_exists(controlled_unit))
 		return;
 
 update_movement();

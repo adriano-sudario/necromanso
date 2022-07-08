@@ -50,9 +50,7 @@ function attack() {
 	image_index = 0;
 	is_manual_sprite_change = true;
 	cancel_movement();
-	
-	audio_sound_pitch(sfx_attack, choose(.8, 1, 1.2, 1.4));
-	play_sound(sfx_attack, 5, false);
+	play_sound(choose(sfx_whoosh1, sfx_whoosh2, sfx_whoosh3), 5, false);
 }
 
 function on_attack_end() {
